@@ -68,9 +68,9 @@ if language == "English":
 
     ### 🤖 Recommendation
     Try out the recommender system:
-    - Select product or user
-    - Choose model (Content-based or Collaborative)
-    - Get top-N product recommendations
+    - Select user
+    - Choose model (Manual or Kmeans)
+    - Get customer segmentation recommendations
 
     ---
 
@@ -115,9 +115,9 @@ elif language == "Tiếng Việt":
     - `Transactions.csv`: Lịch sử tương tác giữa người dùng và sản phẩm.
 
     ### 📁 Dữ liệu đã kết nối
-    - `data_segmentation_total.csv`: Transaction metadata for each customer.
+    - `data_segmentation_total.csv`: Dữ liệu kết hợp từ 2 tập gốc.
   
-    It would be convenient to merge the two datasets for processing.
+    Kết hợp 2 tập dữ liệu giúp thuận tiện trong việc xử lý.
 
     ---
 
@@ -140,8 +140,8 @@ elif language == "Tiếng Việt":
     ### 🤖 Gợi ý sản phẩm
     Trải nghiệm hệ thống gợi ý:
     - Chọn sản phẩm hoặc người dùng
-    - Chọn mô hình (nội dung hoặc cộng tác)
-    - Nhận top-N sản phẩm gợi ý
+    - Chọn mô hình (thủ công hay Kmeans thuật toán học máy không giám sát)
+    - Nhận phân khúc khách hàng gợi ý
 
     ---
 
