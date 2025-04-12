@@ -31,7 +31,7 @@ if language == "English":
     - `manual_rfm`: Manual customer segmentation based on RFM calculations and experience.
 
     ### 🔹 Kmeans - RFM
-    Recommends items based on user behavior and preferences.
+    Clustering Customer based on K-means which is a powerful and widely used algorithm for discovering hidden structures in data by grouping similar data points together.
 
     - `model_Kmeans_seg.pkl`: trained with K-means which is a powerful and widely used algorithm for discovering hidden structures in data by grouping similar data points together.
 
@@ -39,15 +39,14 @@ if language == "English":
 
     ## 📦 Datasets
 
-    ### 📁 Project 1 – General Product Recommendation
+    ### 📁 Raw Data
     - `Products_with_Categories.csv`: Product metadata (name, category).
     - `Transactions.csv`: User-product interaction history.
 
-    ### 📁 Project 2 – Fashion (Men's Clothing)
-    - `Products_ThoiTrangNam.csv`: Product metadata for men’s fashion.
-    - `Products_ThoiTrangNam_rating.csv`: User ratings for fashion products.
-
-    You can switch between datasets depending on your focus.
+    ### 📁 Merge Data
+    - `data_segmentation_total.csv`: Transaction metadata for each customer.
+  
+    It would be convenient to merge the two datasets for processing.
 
     ---
 
@@ -97,31 +96,28 @@ elif language == "Tiếng Việt":
 
     Hệ thống hỗ trợ hai kỹ thuật gợi ý:
 
-    ### 🔹 Gợi ý dựa trên nội dung
-    Đề xuất sản phẩm tương tự dựa trên nội dung (ví dụ: tên, mô tả, danh mục).
+    ### 🔹 Manual - RFM
+    Phân khúc khách hàng bằng thủ công dựa vào các tính toán RFM và kinh nghiệm (ví dụ: Khoản cách từ lần mua hàng gần nhất, Tần suất mua hàng, doanh số mua hàng...)
 
-    - `cosine.pkl`: Sử dụng độ tương đồng cosine giữa các vector sản phẩm.
-    - `gensim.pkl`: Sử dụng word embeddings (Word2Vec / Doc2Vec) huấn luyện bằng Gensim.
+    - `manual_rfm`: Phân khúc khách hàng bằng thủ công dựa vào các tính toán RFM và kinh nghiệm
 
-    ### 🔹 Gợi ý dựa trên cộng tác
-    Đề xuất sản phẩm dựa trên hành vi và sở thích người dùng.
+    ### 🔹 Kmeans - RFM
+    K-means là một thuật toán mạnh mẽ và được sử dụng rộng rãi để khám phá cấu trúc ẩn trong dữ liệu thông qua việc phân nhóm các điểm dữ liệu tương tự lại với nhau
 
-    - `als.pkl`: Phân rã ma trận sử dụng thuật toán ALS.
-    - `surprise.pkl`: Mô hình cộng tác sử dụng thư viện Surprise.
+    - `model_Kmeans_seg.pkl`: K-means là chia một tập dữ liệu thành K cụm riêng biệt, trong đó mỗi điểm dữ liệu được gán cho cụm có trung tâm (centroid) gần nhất
 
     ---
 
     ## 📦 Tập Dữ Liệu
 
-    ### 📁 Dự Án 1 – Gợi ý sản phẩm chung
+    ### 📁 Dữ liệu gốc
     - `Products_with_Categories.csv`: Thông tin sản phẩm (tên, danh mục).
     - `Transactions.csv`: Lịch sử tương tác giữa người dùng và sản phẩm.
 
-    ### 📁 Dự Án 2 – Thời trang nam
-    - `Products_ThoiTrangNam.csv`: Thông tin sản phẩm thời trang nam.
-    - `Products_ThoiTrangNam_rating.csv`: Đánh giá sản phẩm của người dùng.
-
-    Bạn có thể chuyển đổi giữa các tập dữ liệu tùy theo mục đích.
+    ### 📁 Dữ liệu đã kết nối
+    - `data_segmentation_total.csv`: Transaction metadata for each customer.
+  
+    It would be convenient to merge the two datasets for processing.
 
     ---
 
