@@ -17,7 +17,7 @@ if language == "English":
     st.write("""
     # 🧑‍💻 User Guide
 
-    Welcome to the **Shopee Product Recommendation System**! This guide will walk you through using the system, understanding the models, and exploring the dataset.
+    Welcome to the **Customer Segmentation System**! This guide will walk you through using the system, understanding the models, and exploring the dataset.
 
     ---
 
@@ -91,7 +91,7 @@ elif language == "Tiếng Việt":
     st.write("""
     # 🧑‍💻 Hướng Dẫn Sử Dụng
 
-    Chào mừng bạn đến với **Hệ thống Gợi ý Sản phẩm Shopee**! Hướng dẫn này sẽ giúp bạn sử dụng hệ thống, hiểu các mô hình gợi ý và khám phá tập dữ liệu.
+    Chào mừng bạn đến với **Hệ thống Phân khúc khách hàng**! Hướng dẫn này sẽ giúp bạn sử dụng hệ thống, hiểu các mô hình gợi ý và khám phá tập dữ liệu.
 
     ---
 
