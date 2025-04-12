@@ -26,7 +26,7 @@ if language == "English":
     The system supports two clustering techniques:
 
     ### 🔹 Manual - RFM
-    Clustering Customer based on based on expert methods/knowledge (e.g., recency, frequency, monetary, category).
+    Clustering Customer based on expert methods/knowledge (e.g., recency, frequency, monetary, category).
 
     - `manual_rfm`: Manual customer segmentation based on RFM calculations and experience.
 
