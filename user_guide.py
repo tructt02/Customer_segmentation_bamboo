@@ -77,7 +77,7 @@ if language == "English":
     ## 🔗 GitHub Repository
 
     Access the full code, models, and documentation here:  
-    👉 [GitHub Repository](https://github.com/anatwork14/data_science_recommend_system.git)
+    👉 [GitHub Repository](https://github.com/tructt02/Customer_segmentation_bamboot)
 
     ---
 
@@ -148,7 +148,7 @@ elif language == "Tiếng Việt":
     ## 🔗 Kho Mã Nguồn GitHub
 
     Truy cập mã nguồn, mô hình và tài liệu tại:  
-    👉 [GitHub Repository](https://github.com/anatwork14/data_science_recommend_system.git)
+    👉 [GitHub Repository](https://github.com/tructt02/Customer_segmentation_bamboo)
 
     ---
 
