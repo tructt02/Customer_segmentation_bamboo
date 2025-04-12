@@ -23,19 +23,17 @@ if language == "English":
 
     ## ⚙️ Model Preparation
 
-    The system supports two recommendation techniques:
+    The system supports two clustering techniques:
 
-    ### 🔹 Content-Based Filtering
-    Recommends similar items based on product content (e.g., name, description, category).
+    ### 🔹 Manual - RFM
+    Clustering Customer based on based on expert methods/knowledge (e.g., recency, frequency, monetary, category).
 
-    - `cosine.pkl`: Uses cosine similarity between product vectors.
-    - `gensim.pkl`: Uses word embeddings (Word2Vec / Doc2Vec) trained with Gensim (Updating).
+    - `manual_rfm`: Manual customer segmentation based on RFM calculations and experience.
 
-    ### 🔹 Collaborative Filtering
+    ### 🔹 Kmeans - RFM
     Recommends items based on user behavior and preferences.
 
-    - `als.pkl`: Matrix factorization using the ALS algorithm (Updating).
-    - `surprise.pkl`: Collaborative filtering model using the Surprise library.
+    - `model_Kmeans_seg.pkl`: trained with K-means which is a powerful and widely used algorithm for discovering hidden structures in data by grouping similar data points together.
 
     ---
 
