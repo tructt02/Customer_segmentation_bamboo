@@ -162,10 +162,10 @@ daily_sales = df.groupby('transaction_date').size()
 
 st.subheader("Daily Transactions")
 st.line_chart(daily_sales)
-
-monthly_sales = df.groupby(df['transaction_date'].dt.to_period("M")).size()
-st.subheader("Monthly Transactions")
-st.bar_chart(monthly_sales)
+# Đoạn code cũ bị lỗi hiển thị tháng
+# monthly_sales = df.groupby(df['transaction_date'].dt.to_period("M")).size()
+# st.subheader("Monthly Transactions")
+# st.bar_chart(monthly_sales)
 
 monthly_sales = df.groupby(['year', 'month']).size().reset_index(name='count')
 monthly_sales['month_year'] = monthly_sales['year'].astype(str) + '-' + monthly_sales['month'].astype(str).str.zfill(2)
