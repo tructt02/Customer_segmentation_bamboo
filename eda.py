@@ -167,6 +167,11 @@ monthly_sales = df.groupby(df['transaction_date'].dt.to_period("M")).size()
 st.subheader("Monthly Transactions")
 st.bar_chart(monthly_sales)
 
+monthly_sales = df.groupby(['year', 'month']).size().reset_index(name='count')
+monthly_sales['month_year'] = monthly_sales['year'].astype(str) + '-' + monthly_sales['month'].astype(str).str.zfill(2)
+st.subheader("Monthly Transactions Fix")
+st.bar_chart(monthly_sales.set_index('month_year')['count'])
+
 weekday_sales = df['weekday'].value_counts().sort_index()
 st.subheader("Transactions by Weekday")
 st.bar_chart(weekday_sales)
